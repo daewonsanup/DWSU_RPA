@@ -3,7 +3,13 @@ from starlette.requests import Request
 from starlette.responses import JSONResponse
 
 
-CSRF_EXEMPT = {"/api/auth/login", "/api/system/initialize", "/api/system/status"}
+CSRF_EXEMPT = {
+    "/api/auth/login",
+    "/api/system/status",
+    "/api/system/test-db",
+    "/api/system/configure",
+    "/api/system/initialize",
+}
 SAFE_METHODS = {"GET", "HEAD", "OPTIONS"}
 
 
